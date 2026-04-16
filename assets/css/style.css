@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #fdf2f8 0%, #ffe4f3 100%);
+    color: #4a2c3a;
+}
+h1, h2, h3, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.navbar {
+    background: rgba(255,255,255,0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #ffc0e0;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #d63384, #f06292);
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214,51,132,0.3);
+}
+.card {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    background: white;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+}
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.product-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #d63384;
+}
+.cart-badge {
+    background-color: #d63384;
+    animation: bounce 0.3s;
+}
+@keyframes bounce {
+    0%,100%{ transform: translateY(0); }
+    50%{ transform: translateY(-3px); }
+}
+.table {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.alert {
+    border-radius: 16px;
+}
